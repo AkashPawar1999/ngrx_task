@@ -15,7 +15,7 @@ import { StoreModule } from '@ngrx/store';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    StoreModule.forRoot({ store: keyValuePairsReducer }),
+    StoreModule.forRoot({ keyvaluePairs: keyValuePairsReducer }),
   ],
   providers: [],
   bootstrap: [AppComponent]

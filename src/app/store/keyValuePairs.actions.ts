@@ -1,12 +1,12 @@
 import { createAction, props } from "@ngrx/store";
 
-export const addKeyValuePair = createAction('[keyValuePairs] Add keyValue ',
+export const addKeyValuePair = createAction('[store] Add keyValue ',
 props<{ key: string, value:string }>());
 
-export const concatKeyValuePair = createAction('[keyValuePairs] concatenate key Value',
+export const concatKeyValuePair = createAction('[store] concatenate key Value',
 props<{ key1: string, key2: string }>());
 
-export const editKeyValuePair = createAction('[keyValuePairs] Edit keyValue ',
+export const editKeyValuePair = createAction('[store] Edit keyValue ',
 props<{ index: number, key: string, value: string }>());
 
 

@@ -20,8 +20,8 @@
             <th>Key</th>
             <th>Value</th>
             <th></th>
-        </tr>
-        <tr *ngFor="let item of keyValuePairs$ | async; let i=index">
+        </tr>   
+        <tr *ngFor="let item of keyValuePairs | async; let i=index">
             <td>{{item.key}}</td>
             <td>{{item.value}}</td>
             <td><button (click)="editKeyValuePair(i, key1, key2)">edit</button></td>

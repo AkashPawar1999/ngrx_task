@@ -4,12 +4,12 @@ import * as keyValuePairsActions from '../store/keyValuePairs.actions'
 export interface State {
     keyValuePairs: { key: string, value: string }[];
     editingIndex: number | null;
-}
+};
 
 export const initialState: State = {
     keyValuePairs: [],
     editingIndex: null
-}
+};
 
 export const keyValuePairsReducer = createReducer(
     initialState,
