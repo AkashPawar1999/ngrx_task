@@ -1,4 +1,4 @@
-<p>Here is our Ngrx Assignment </p>
+<p><u>Here is our Ngrx Assignment</u></p>
 
 <div class="left-section">
     <div class="first">
@@ -6,7 +6,6 @@
         <input [(ngModel)]="newValue" placeholder="Value" />
         <button (click)="addKeyValuePair(newKey, newValue)">Add</button>
     </div>
-
     <div class="second">
         <input [(ngModel)]="key1" placeholder="Key1" />
         <input [(ngModel)]="key2" placeholder="Key2" />
@@ -20,8 +19,8 @@
             <th>Key</th>
             <th>Value</th>
             <th></th>
-        </tr>   
-        <tr *ngFor="let item of keyValuePairs | async; let i=index">
+        </tr>
+        <tr *ngFor="let item of keyValuePairs | async; let i=index" >
             <td>{{item.key}}</td>
             <td>{{item.value}}</td>
             <td><button (click)="editKeyValuePair(i, key1, key2)">edit</button></td>

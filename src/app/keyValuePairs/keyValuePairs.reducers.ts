@@ -1,5 +1,5 @@
 import { createReducer, on } from "@ngrx/store";
-import * as keyValuePairsActions from '../store/keyValuePairs.actions'
+import * as keyValuePairsActions from './keyValuePairs.actions'
 
 export interface State {
     keyValuePairs: { key: string, value: string }[];
